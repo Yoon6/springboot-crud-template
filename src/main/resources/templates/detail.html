@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+<h1>Detail Page</h1>
+
+<table border="0">
+    <tr>
+        <th>title</th>
+        <td>
+            <input type="text" name="title" th:value="${post.title}"/>
+        </td>
+    </tr>
+    <tr>
+        <th>author</th>
+        <td>
+            <input type="text" name="author" th:value="${post.author}" readonly/>
+        </td>
+    </tr>
+    <tr>
+        <th>content</th>
+        <td>
+            <textarea th:text="${post.content}" name="content"></textarea>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
